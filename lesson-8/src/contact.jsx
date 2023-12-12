@@ -1,10 +1,12 @@
+import { useParams } from "react-router-dom"
 
 
 function Contact() {
- 
-
+     
+    
+    
     return (
-       <div><p>contact page</p></div>
+       <div><p>contact page </p></div>
     )
   }
 

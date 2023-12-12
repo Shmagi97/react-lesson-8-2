@@ -1,7 +1,26 @@
+import { Link } from "react-router-dom"
+import './home.css'
+
 function Home() {
 
+    const list = [
+        'tbilisi',
+        'batumi',
+        "qutaisi"
+
+    ]
+
     return ( 
-      <div><p>Home page</p></div>
+      
+        list.map((el)=> {
+            return(
+
+                <div className="div2">   <Link to={`/sity/${el}`}>{el}</Link>   </div>
+            
+            )
+        })
+
+   
     )
   }
 
